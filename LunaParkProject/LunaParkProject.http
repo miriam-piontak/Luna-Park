@@ -1,0 +1,6 @@
+@LunaParkProject_HostAddress = http://localhost:5002
+
+GET {{LunaParkProject_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
