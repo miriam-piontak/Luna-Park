@@ -25,6 +25,7 @@
   <ItemGroup>
     <ProjectReference Include="..\BLL\IDAL.csproj" />
     <ProjectReference Include="..\DTO\DTO.csproj" />
+    <ProjectReference Include="..\IDAL\IDAL.csproj" />
   </ItemGroup>
 
 </Project>

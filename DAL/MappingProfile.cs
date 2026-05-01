@@ -29,9 +29,9 @@ namespace DAL
             };
         }
         //casting employee to employeeDTO
-        public static EmployeeDTO Employee_to_dto(Employee employee)
+        public static DTO.EmployeeDTO Employee_to_dto(Models.Employee employee)
         {
-            return new EmployeeDTO
+            return new DTO.EmployeeDTO
             {
                 EmployeeTz = employee.EmployeeTz,
                 FullName = employee.EmployeeFirstName + " " + employee.EmployeeLastName,
@@ -40,7 +40,7 @@ namespace DAL
             };
         }
         //casting employeeDTO to employee
-        public static Employee EmployeeDTO_to_Employee(EmployeeDTO employeeDTO)
+        public static Models.Employee EmployeeDTO_to_Employee(DTO.EmployeeDTO employeeDTO)
         {
             string[] names = employeeDTO.FullName.Split(' ');
             string firstName = "";
@@ -48,7 +48,7 @@ namespace DAL
             {
                 firstName += names[i] + " ";
             }
-            return new Employee
+            return new Models.Employee
             {
                 EmployeeTz = employeeDTO.EmployeeTz,
                 EmployeeFirstName = firstName.Trim(),

@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 
 namespace IDAL.Interfaces
 {
-    public interface ITicketService
+    public interface ITicketDal
     {
         //כרטיסים
         //מחזיר את כל הכרטיסים לפי מתקן

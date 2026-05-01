@@ -6,7 +6,7 @@ using DTO;
 
 namespace IDAL.Interfaces
 {
-    public interface IAttractionService
+    public interface IAttractionDal
     {
         //מתקנים
         // Method to retrieve all attractions

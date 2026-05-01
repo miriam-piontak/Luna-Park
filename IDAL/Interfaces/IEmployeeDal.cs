@@ -1,11 +1,11 @@
-﻿using DTO;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using DTO;
 
 namespace IDAL.Interfaces
 {
-    public interface IEmployeeService
+    public interface IEmployeeDal
     {
         //עובדים
         //פונקציה שמקבלת קוד מתקן ומחזירה את כל העובדים שעובדים בו

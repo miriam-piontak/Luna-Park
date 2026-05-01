@@ -1,10 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
+﻿using IDAL.Interfaces;
+using DAL
 namespace BLL
 {
-    internal class AttractionService
+    public class AttractionService : IAttractionDal
     {
+        private readonly IAttractionDal _attractionDal;
+
+        public AttractionService()
+        {
+        }
     }
 }
