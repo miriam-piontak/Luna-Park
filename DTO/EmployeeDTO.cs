@@ -10,7 +10,7 @@ namespace DTO
         public string FullName { get; set; } = null!;
 
         public int AttractionId { get; set; }
-        public string AttractionName { get; set; }
+        public string? AttractionName { get; set; }
 
 
     }

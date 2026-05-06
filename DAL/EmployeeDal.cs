@@ -37,9 +37,13 @@ namespace DAL
         //delete employee from DB
         public async Task DeleteEmployeeAsync(string id)
         {
-            var id2 = _context.Employees.Find(id);
-            _context.Employees.Remove(id2);
-            await _context.SaveChangesAsync();
+            var id2 = await _context.Employees.FindAsync(id);
+            if(id2!=null)
+            {
+                _context.Employees.Remove(id2);
+                await _context.SaveChangesAsync();
+            }
+
 
         }
 
