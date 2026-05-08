@@ -16,7 +16,7 @@ namespace DAL
             this._mapper = mapper;
         }
 
-        //return Employee By Attraction
+        //return Employees By Attraction
         public async Task<List<EmployeeDTO>> GetEmployeesByAttractionAsync(int id)
         {
            var employeesFromDB=
@@ -47,7 +47,7 @@ namespace DAL
 
         }
 
-        //adding Employee to the DB
+        //adding Employee to DB
         public async Task CreateEmployeeAsync(EmployeeDTO employee)
         {
             var employeeDAL=_mapper.Map<Employee>(employee);
