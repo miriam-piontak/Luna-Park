@@ -13,6 +13,8 @@ public partial class Ticket
 
     public string EmployeeId { get; set; } = null!;
 
+    public DateTime TicketStartDateTime { get; set; }
+
     public virtual Attraction Attraction { get; set; } = null!;
 
     public virtual Employee Employee { get; set; } = null!;

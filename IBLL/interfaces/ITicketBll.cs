@@ -5,7 +5,7 @@ using System.Text;
 
 namespace IBLL.interfaces
 {
-    internal interface ITicketBll
+    public interface ITicketBll
     {
         //get all ticket
         Task<List<TicketDTO>> getTicketsAsync();

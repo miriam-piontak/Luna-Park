@@ -15,6 +15,13 @@ namespace DAL
             this._context = context;
             this._mapper = mapper;
         }
+        //return all employees
+        public async Task<List<EmployeeDTO>> GetEmployeesAsync()
+        {
+            var employeesDal = _context.Employees.ToListAsync();
+            var employeesDto = _mapper.Map<List<EmployeeDTO>>(employeesDal);
+            return employeesDto;
+        }
 
         //return Employees By Attraction
         public async Task<List<EmployeeDTO>> GetEmployeesByAttractionAsync(int id)

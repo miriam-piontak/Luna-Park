@@ -5,7 +5,7 @@ using System.Text;
 
 namespace IBLL.interfaces
 {
-    internal interface IAttractionBll
+    public interface IAttractionBll
     {
         //get all attrction
         Task<List<AttractionDTO>> GetAllAttractionsAsync();

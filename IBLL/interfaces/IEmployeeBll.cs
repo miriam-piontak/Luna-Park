@@ -5,7 +5,7 @@ using System.Text;
 
 namespace IBLL.interfaces
 {
-    internal interface IEmployeeBll
+    public interface IEmployeeBll
     {
         //get all employees by attraction
         Task<List<EmployeeDTO>> getEmployeesByAttractionAsync(int id);

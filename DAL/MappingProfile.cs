@@ -62,6 +62,7 @@ namespace DAL
         {
             return new TicketDTO
             {
+                TicketStartDateTime = ticket.TicketStartDateTime,
                 TicketId = ticket.TicketId,
                 TicketPrice = ticket.TicketPrice,
 
@@ -78,6 +79,7 @@ namespace DAL
         {
             return new Ticket
             {
+                TicketStartDateTime= ticketDTO.TicketStartDateTime,
                 TicketId = ticketDTO.TicketId,
                 TicketPrice = ticketDTO.TicketPrice,
                 AttractionId = ticketDTO.AttractionId,

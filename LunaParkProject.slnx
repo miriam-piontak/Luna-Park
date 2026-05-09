@@ -2,6 +2,7 @@
   <Folder Name="/Solution Items/">
     <File Path=".gitignore" />
   </Folder>
+  <Project Path="BLL/BLL.csproj" Id="2d67c007-a4e0-4742-ac7d-76802ee3cdf0" />
   <Project Path="DAL/DAL.csproj" />
   <Project Path="DTO/DTO.csproj" />
   <Project Path="IBLL/IBLL.csproj" Id="f808369b-d600-4994-80d2-d11281442fb5" />

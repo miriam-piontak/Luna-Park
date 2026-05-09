@@ -18,12 +18,12 @@ namespace BLL
 
         public Task<List<AttractionDTO>> GetAllAttractionsAsync()
         {
-            throw new NotImplementedException();
+            return _attractionDal.GetAllAttractionsAsync();
         }
 
         public Task<AttractionDTO> getDetailsAsync(int id)
         {
-            throw new NotImplementedException();
+            return _attractionDal.GetAttractionByIdAsync(id);
         }
     }
 }
